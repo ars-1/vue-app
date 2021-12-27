@@ -1,11 +1,13 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+<img alt="Vue logo" src="./assets/logo.png" height="50" />
+    <h1 class="heading">Vue.js</h1>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/contact">Contact</router-link>
   </div>
-  <app-header/>
-  <router-view/>
-  <app-footer/>
+  <router-view />
+  <app-footer />
 </template>
 
 <style lang="scss">
@@ -17,10 +19,20 @@
   color: #2c3e50;
 }
 
+.heading,
+  img {
+    float: left;
+  }
+  .heading {
+    margin-top: 5px;
+  }
+
 #nav {
   padding: 30px;
+  margin-right: 10%;
 
   a {
+    margin-top: 3px;
     font-weight: bold;
     color: #2c3e50;
 
@@ -31,12 +43,10 @@
 }
 </style>
 <script>
-import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 
 export default {
   components: {
-    AppHeader,
     AppFooter
   }
 }
