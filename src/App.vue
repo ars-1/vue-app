@@ -22,9 +22,11 @@
 .heading,
   img {
     float: left;
+    padding: 10px;
   }
   .heading {
     margin-top: 5px;
+    padding-left: 0;
   }
 
 #nav {
